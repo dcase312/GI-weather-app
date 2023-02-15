@@ -31,8 +31,9 @@ const product = {
 // console.log(stock)
 // console.log(rating)
 
-
-const transaction = (type, { label, stock }) => {
+//default object so when an object is destructured the code still works if an object isn't passed in
+//default value set for if value isn't plugged in 
+const transaction = (type, { label, stock = 0 } = {}) => {
    console.log(type, label, stock)
 }
 
