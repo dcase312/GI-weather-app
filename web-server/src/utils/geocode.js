@@ -5,7 +5,7 @@ const request = require('request')
 const geocode = (address, callback) => {
     //inputs location into address to get mapbox api info
     const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + encodeURIComponent(address) + '.json?access_token=pk.eyJ1IjoiZGNhc2U5OSIsImEiOiJjbGUxMTljNWQwZmRpM3dvNmF0OGlzbHNwIn0.i1TCEsFnKE57r64ehA6esw&limit=1'
-//handles error if something went wrong with the request
+    //handles error if something went wrong with the request
     request({url, json: true}, (error, { body }) => {
         //error for if you have connection issues
         if (error){

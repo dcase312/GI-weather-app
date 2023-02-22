@@ -6,12 +6,24 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    {{>header}}
     <div class="main-content">
-        {{>header}}
-        <img class="portrait" src="/img/me.png">
+        <img class="img-fluid" src="/img/me.png">
     </div>
+    <div class="container text-center">
+  <div class="row justify-content-md-center">
+    <section class="col col-lg-2">
+      <p>23</p>
+    </section>
+    <section class="col-md-auto">
+      <p>Deborah Case</p>
+    </section>
+    <section class="col col-lg-2">
+      <p>she/her</p>
+    </section>
+  </div>
+  </div>
 
     {{>footer}}
-
 </body>
 </html>

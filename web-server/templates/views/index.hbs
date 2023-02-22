@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="main-content">
-         {{>header}}
-         <img class="portrait" src="/img/main-weather.webp">
+    {{>header}}
+    <main class="main-content">
+         <img class="img-fluid" src="/img/main-weather.webp">
          <p>Use this site to get your weather!</p>
-
-         <form>
-            <input placeholder="Location">
-            <button>Search</button>
-         </form>
+         
+         <div class="container-fluid">
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+         </div>
+         
 
          <p id="message-1"></p>
          <p id="message-2"></p>
-    </div>
+    </main>
    
     {{>footer}}
 

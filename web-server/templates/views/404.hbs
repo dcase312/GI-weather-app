@@ -4,14 +4,13 @@
     <title>404</title>
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">
-
 </head>
 <body>
-    <div class="main-content">
-        {{>header}}
+    {{>header}}
+    <main class="main-content">
         <p>{{errorMessage}}</p>
-        <img class="portrait" src="/img/frown1.0.png">
-    </div>
+        <img class="img-fluid" src="/img/frown1.0.png">
+    </main>
     
     {{>footer}}
 </body>

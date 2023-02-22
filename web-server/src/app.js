@@ -60,10 +60,8 @@ app.get('/help', (req, res) => {
     })
 })
 
-//tells the server what to do when a user asks for a resource at a specific url
 //takes 2 arguements, the route and a function
 //function takes 2 arguements, request and response
-//JSON can be passed through as an object. Arrays can also be passed through
 app.get('/weather', (req, res) =>{
     //if there's no address run this code
     if(!req.query.address) {
@@ -93,14 +91,6 @@ app.get('/weather', (req, res) =>{
         })
     })
 
-    //if there is run this one
-    //allows us to send something to the user
-    //html can be passed through the string
-    // res.send({
-    //     forecast: 'It is snowing',
-    //     location: 'Charlotte',
-    //     address: req.query.address
-    // })
 })
 
 //creating an endpoint that sends back products to be displayed in browser

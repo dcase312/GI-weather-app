@@ -9,7 +9,6 @@ const address = process.argv[2]
 if (!address){
     console.log('Please provide an address')
 } else {
-    //only one of these has a value, the other is undefined
 //callback chaining where you chain together multiple callbacks to do many things in a specific order
 //desctructured the object in our API so we can call each property by name
 geocode(address, (error, { latitude, longitude, location } = {}) => {
@@ -22,7 +21,7 @@ geocode(address, (error, { latitude, longitude, location } = {}) => {
         if (error){
             return console.log(error)
         }
-        //shows the location first in the terminal
+        //shows the location first
         console.log(location)
         //then the forecast
         console.log(forecastData)
